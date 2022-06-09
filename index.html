@@ -1,0 +1,780 @@
+<html>
+  <head>
+    <link rel="icon" type="image/x-icon" href="Emerald_Eye.webp">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+  </head>
+<style>
+.dropbtn {
+    background-color:rgba(0, 0, 0, 0.0) ;
+    color: white;
+    padding: 9px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.);
+    z-index: 6;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: white;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {
+  background-color: rgba(255, 0, 0, 0.4);
+  border-bottom: 1px solid #fff;
+}
+
+
+.mil-menu {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 8;
+
+}
+
+.mil-menu-item {
+  padding: 10px;
+  text-align: right;
+}
+
+.mil-menu-link {
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+}
+
+.mil-menu-item img {
+  display: block;
+}
+
+.mil-menu-mobile {
+  display: none;
+  cursor: pointer;
+}
+
+.mil-menu-dropdown {
+  box-sizing: border-box;
+  padding: 50px;
+  color: white;
+  width: 100%;
+  position: fixed;
+  display: none;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 4;
+}
+
+.mil-menu-dropdown a {
+  width: 40%;
+  margin: 20px auto;
+  display: block;
+  text-align: center;
+  color: white;
+  font-size: 15px;
+}
+
+.mil-menu-dropdown a:hover {
+  display: block;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+  background: rgba(255, 0, 0, 0.4);
+  
+}
+
+.mil-menu-item a:hover {
+  background: rgba(255, 0, 0, 0.4);
+  color: white;
+}
+
+
+
+
+.mil-logo {
+  width: 90px;
+  
+}
+
+
+#hamburger-1 {
+  transform: scale(0.5);
+}
+
+.hamburger .line {
+  width: 50px;
+  height: 5px;
+  background-color: white;
+  display: block;
+  margin: 8px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger:hover {
+  cursor: pointer;
+}
+
+#hamburger-1.is-active .line:nth-child(2) {
+  opacity: 0;
+}
+
+#hamburger-1.is-active .line:nth-child(1) {
+  -webkit-transform: translateY(13px) rotate(45deg);
+  -ms-transform: translateY(13px) rotate(45deg);
+  -o-transform: translateY(13px) rotate(45deg);
+  transform: translateY(13px) rotate(45deg);
+}
+
+#hamburger-1.is-active .line:nth-child(3) {
+  -webkit-transform: translateY(-13px) rotate(-45deg);
+  -ms-transform: translateY(-13px) rotate(-45deg);
+  -o-transform: translateY(-13px) rotate(-45deg);
+  transform: translateY(-13px) rotate(-45deg);
+}
+
+@media (max-width: 520px) {
+  .mil-menu {
+  }
+  .mil-menu-link {
+    padding: 5px;
+    font-size: 0.8rem;
+  }
+
+  .mil-menu-desktop {
+    display: none;
+  }
+
+  .mil-menu-mobile {
+    display: block;
+  }
+}
+
+body {
+  animation: slide 4s linear infinite alternate;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("https://res.cloudinary.com/dziflll96/image/upload/v1653152988/Sito%20esame/Il_Diavolo_-_25_Novembre_2021_2_zqu8vq.jpg");
+  background-repeat: repeat;
+  border-left-width: 0px;
+  border-left-style: solid;
+
+}
+
+@keyframes slide {
+  to {
+    background-position: 0 90%;
+  }
+}
+
+
+.text-container {
+  height: 700px;
+  width: 2000px;
+  display: table-cell;
+  vertical-align: middle;
+  
+  
+}
+
+.text-container h1 {
+  -webkit-text-stroke: 2px white;
+  -webkit-background-clip: text;
+  font-size: 60px;
+  color: rgba(0, 0, 0, 0.1);
+  text-align: center;
+  text-transform: uppercase;
+   animation-name: fadein;
+  animation-duration:6s;
+}
+
+@keyframes fadein {
+  from {opacity:0}
+  to {opacity:1};
+}
+
+  
+}
+@keyframes animate {
+  to {
+    background-position: 0 50%;
+  }
+}
+
+
+h2{
+  border-bottom: 3px black;
+  font-family: 'PT Sans', sans-serif;
+  color: white;
+  font-size: 12px;
+  text-align: center;
+  
+   
+}
+
+
+h3{
+  border-bottom: 2px solid #660000;
+  font-family: 'PT Sans', sans-serif;
+  background-color: ;
+  color: white;
+  font-size: 20px;
+  
+   
+}
+
+h4{
+  font-family: 'Passion One', cursive;
+  background-color: ;
+  color: #660000;
+  font-size: 20px;
+  
+   
+}
+
+hr.n2 {
+  border: 1px solid red;
+}
+
+
+div#home{
+   background-size:cover;
+   background-attachment:fixed;
+  display:table;
+  text-align: center;
+}
+
+
+div#portfolio {
+  width: 100%;
+  background-color:#1a0400; 
+  background-size: cover;
+  display: table;
+  background-attachment:fixed;
+  
+}
+
+div#drawings {
+  width: 100%;
+  background-color:#130300; 
+  background-size: cover;
+  display: table;
+  background-attachment:fixed;
+ 
+}
+
+div#aboutme {
+  width: 100%;
+  background-size: cover;
+  display: table;
+  background: black;
+  background-attachment:fixed;
+  color:white;
+
+
+}
+
+
+div#contactme {
+  width: 100%;
+  display: table;
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
+  background-size: cover;
+  display: table;
+  background-attachment:fixed;
+  color: white;
+}
+
+
+.mil-aboutme {
+  border: 3px solid #660000;
+  border-radius:50%;
+  -moz-border-radius:50%;
+  -webkit-border-radius:50%;
+  width:30%;
+  font-family: 'Open Sans', sans-serif;
+   
+}
+
+
+.mil-contact {
+  border: 3px solid white;
+  border-radius:50%;
+  -moz-border-radius:50%;
+  -webkit-border-radius:50%;
+  width:30%;
+   
+}
+
+.bio-text {
+  position: relative;
+  max-width: 60em;
+  padding: 0 4.375em;
+  z-index: 2;
+}
+
+.body-texts {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0 auto;
+  letter-spacing: .5px;
+
+  text-align: justify;
+}
+
+
+
+
+.gallery {
+  max-width: 800px;
+  
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery img {
+  flex: 1 1 auto;
+  width: auto;
+  height: auto;
+  margin: 5px;
+  min-width: 130px;
+  object-fit: cover;
+  transition: transform .2s;
+}
+
+.gallery:hover img {
+  filter: blur(2px) brightness(.8) grayscale(.7);
+  transform: scale(1);
+}
+
+.gallery img:hover {
+  position: relative;
+  z-index: 1;
+  filter: blur(0);
+  transform: scale(1.1);
+   
+}
+.image-link {
+  cursor: -webkit-zoom-in;
+  cursor: -moz-zoom-in;
+  cursor: zoom-in;
+}
+
+
+.mfp-with-zoom .mfp-container,
+.mfp-with-zoom.mfp-bg {
+	opacity: 0;
+	-webkit-backface-visibility: hidden;
+	-webkit-transition: all 0.4s ease-out; 
+	-moz-transition: all 0.4s ease-out; 
+	-o-transition: all 0.4s ease-out; 
+	transition: all 0.4s ease-out;
+}
+
+.mfp-with-zoom.mfp-ready .mfp-container {
+		opacity: 1;
+}
+.mfp-with-zoom.mfp-ready.mfp-bg {
+		opacity: 0.8;
+}
+
+.mfp-with-zoom.mfp-removing .mfp-container, 
+.mfp-with-zoom.mfp-removing.mfp-bg {
+	opacity: 0;
+}
+
+.mfp-no-margins img.mfp-img {
+	padding: 0;
+}
+.mfp-no-margins .mfp-figure:after {
+	top: 0;
+	bottom: 0;
+
+}
+
+
+
+div {
+  background-color:nk;
+  border: 0px;
+ 
+}
+
+
+.social-media-icons-list {
+  text-align: center;
+  margin-left: -50px;
+}
+
+.social-media-icons-list li {
+  display: inline-block;
+  margin: -5px 5px;
+  filter: grayscale(40%);
+  -webkit-filter: grayscale (40%);
+  background: white;
+  border-radius:50%;
+
+}
+
+.social-media-icon img {
+  -webkit-transition: all .1s ease-in-out;
+  -moz-transition: all .1s ease-in-out;
+  -ms-transition: all .1s ease-in-out;
+  -o-transition: all .1s ease-in-out;
+  transition: all .1s ease-in-out;
+}
+
+.social-media-icon img:hover {
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  
+}
+
+
+.paraimg {
+  padding: 0;
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: 50% 0;
+  background-repeat: repeat;
+}
+
+.paraimg:first-child {
+  height: 160px;
+  min-height: inherit;
+  background-attachment: inherit;
+  background-position: center;
+  background-size: cover;
+}
+
+.paraimg2 {
+  padding: 0;
+  min-height: 900px;
+  background-attachment: fixed;
+  background-position: 50% 0;
+  background-repeat: repeat;
+}
+
+.paraimg2:first-child {
+  height: 220px;
+  min-height: inherit;
+  background-attachment: inherit;
+  background-position: center;
+  background-size: cover;
+}
+
+</style>
+<link href="https://fonts.googleapis.com/css?family=Hind+Madurai" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Gudea|PT+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Passion+One" rel="stylesheet">
+<link rel="stylesheet" href="magnific-popup.css">
+
+<html>
+ <body>
+ 
+  <nav class="mil-menu">
+   <nav class="mil-menu-item">
+     <a href="#home">
+      <img class="mil-logo" src="https://res.cloudinary.com/dziflll96/image/upload/c_thumb,w_200,g_face/v1653647139/Sito%20esame/Logosito_xoimtm.png"/></a>
+     </nav>
+    <nav class="mil-menu-item hil-menu-desktop">
+      <a class="mil-menu-link" href="#home">HOME</a>
+      <div class="dropdown">
+        <button class="dropbtn">PORTFOLIO</button>
+        <div class="dropdown-content">
+          <a href="#portfolio">PAINTINGS</a>
+          <a href="#drawings">DRAWINGS</a>
+         </div>
+      </div>
+      <a class="mil-menu-link" href="#aboutme">ABOUT ME</a>
+      <a class="mil-menu-link" href="#contactme">CONTACT ME</a>
+      </nav>
+   <nav class="mil-menu-item mil-menu-mobile">
+      <nav class="hamburger" id="hamburger-1">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </nav>
+    </nav>
+  </nav>
+   <nav class="mil-menu-dropdown">
+    <a class="mil-menu-link" href="#home">HOME</a>
+    <a class="mil-menu-link" href="#portfolio">PORTFOLIO</a>
+    <a class="mil-menu-link" href="#portfolio">--Paintings--</a>
+    <a class="mil-menu-link" href="#drawings">--Drawings--</a>
+     <a class="mil-menu-link" href="#aboutme">ABOUT ME</a>
+    <a class="mil-menu-link" href="#contactme">CONTACT ME</a>
+  </nav>
+   <div id="home">
+    <div class="text-container">
+      <h1>Mil
+        <br><br>Creepy Cute Portfolio</h1></div>
+  </div>
+   <div id="portfolio">
+<section class="paraimg" data-type="background" data-speed="100" style="background-image: url(https://res.cloudinary.com/dziflll96/image/upload/v1653153134/Sito%20esame/Opera_senza_titolo_79_pxjwip.webp);"></section>
+	 <div class="container">
+      <h4>
+        <center>
+          <font size="7">Digital PAINtings</font> 
+        </center>
+      </h4>
+       <div class="gallery">
+         <img class="enlarge image-link" style="width:220px; height:280px;" img src="1.jpg" a href="https://res.cloudinary.com/dziflll96/image/upload/c_scale,w_855/v1653153452/Sito%20esame/Opera_senza_titolo_82_nlmpdv.jpg"> </a>
+         <img class="enlarge image-link" style="width:220px; height:280px;" img src="2.jpg" a href="https://res.cloudinary.com/dziflll96/image/upload/c_scale,w_902/v1653153312/Sito%20esame/Opera_senza_titolo_81_pjrxkn.jpg"> </a>
+         <img class="enlarge image-link" style="width:220px; height:280px;" img src="3.jpg" a href="https://res.cloudinary.com/dziflll96/image/upload/c_scale,w_958/v1653153235/Sito%20esame/Opera_senza_titolo_80_onq173.jpg"> </a>
+		     <img class="enlarge image-link" style="width:380px; height:280px;" img src="4.jpg" a href="https://res.cloudinary.com/dziflll96/image/upload/c_scale,w_922/v1653153134/Sito%20esame/Opera_senza_titolo_79_pxjwip.jpg"> </a>
+		     <img class="enlarge image-link" style="width:280px; height:280px;" img src="5.jpg" a href="https://res.cloudinary.com/dziflll96/image/upload/c_scale,w_781/v1653660336/Sito%20esame/unnamed_w8feoc.jpg"> </a>
+		     <img class="enlarge image-link" style="width:330px; height:330px;" img src="6.jpg" a href="https://res.cloudinary.com/dziflll96/image/upload/c_scale,w_900/v1653660550/Sito%20esame/Happy-Birthday---5-Novembre-2021_mogjyk.jpg"> </a>
+		     <img class="enlarge image-link" style="width:330px; height:330px;" img src="7.jpg" a href="https://res.cloudinary.com/dziflll96/image/upload/c_scale,w_919/v1653660551/Sito%20esame/Opera-senza-titolo_wu6xfk.jpg"> </a>
+</div>
+		 </div>
+    </div>
+    <br>
+    <br>
+  </div>
+   <div id="drawings">
+    <section class="paraimg" data-type="background" data-speed="10" style="background-image: url(https://res.cloudinary.com/dziflll96/image/upload/v1653153961/Sito%20esame/Opera_senza_titolo_84_dkeebx.jpg);"></section>
+     <div class="container">
+      <h4>
+        <center>
+          <font size="7">Drawings</font>
+          </center>
+      </h4>
+      <center>
+	  <div class="gallery">
+        <img class="enlarge" style="width:220px; height:280px;" img src="8.jpg" a href="https://res.cloudinary.com/dziflll96/image/upload/c_scale,w_917/v1653154169/Sito%20esame/Opera_senza_titolo_86_md1j4c.jpg"> </a>
+        <img class="enlarge" style="width:200px; height:280px;" img src="9.jpg" a href="https://res.cloudinary.com/dziflll96/image/upload/c_scale,w_917/v1653153730/Sito%20esame/Opera_senza_titolo_83_req200.jpg"> </a>
+        <img class="enlarge" style="width:220px; height:280px;" img src="10.jpg" a href="https://res.cloudinary.com/dziflll96/image/upload/c_scale,w_900/v1653153895/Sito%20esame/Pls_kill_Me_szcrku.jpg"> </a>
+        <img class="enlarge" style="width:330px; height:280px;" img src="11.jpg" a href="https://res.cloudinary.com/dziflll96/image/upload/c_scale,w_850/v1653661405/Sito%20esame/Mom_bxet7p.jpg"> </a>
+		    <img class="enlarge" style="width:330px; height:280px;" img src="12.jpg" a href="https://res.cloudinary.com/dziflll96/image/upload/c_scale,w_850/v1653661406/Sito%20esame/Opera-senza-titolo_1_wdjnv0.jpg"></a>
+         </div>
+      </center>
+       
+    </div>
+    <br>
+    <br>
+  </div>
+   <div id="aboutme">
+    <section class="paraimg2" data-type="background" data-speed="10" style="background-image: url(https://res.cloudinary.com/dziflll96/image/upload/v1654765369/Sito%20esame/mila_maraniello_foto_2_OKOK-2_pwgo9x.jpg);"></section>
+      <div class="container">
+      <h4>
+        <center>
+          <font size="7">About Me</font>
+        </center>
+      </h4>
+        <br>
+      <center><img class="mil-aboutme" src="https://res.cloudinary.com/dziflll96/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1653154975/Sito%20esame/MILA-MARANIELLO-FOTO-1-e1636738648646_xif4fp.jpg"></img>
+      </center>
+      <br>
+      <div class="bio-text body-texts">
+        <font color=white>
+        <p>Mila Maranello was born in Naples in
+2000 and she started drawing since her
+
+early youth. Later, she studied illustration and concept art at the Comix
+
+Italian School and at the moment she
+is attending Naples Academy of Fine
+Arts.
+She has been inspired first of all by
+artists such as Ally McIntyre, Edward
+Hopper and Francis Bacon.
+Her very first personal exibition was
+
+inagurated in Februrary 2020 at the Literary Nuts Cafè in Naples, where some
+
+of the works, taken from the artistic cycle “Paper Life”, were exibited. <br>
+           <p>During
+
+the same year, on 23 July, there came
+another personal: “Woman Earth” at
+the Study Centre Pietro Golia, and also
+
+a virtual exibition at PAN for the cata-
+logue Expo 2020, an exibition at Bene
+
+Biennale, another at Sulmona Prize,
+the last one at CAI (Catalogue Italian
+Artists). In addition she contributed to
+Art for Aid - A work of art, for L’ Albero
+delle Idee e della conoscenza and for
+the Literary Cafè of Italy and Europe.
+In the early months of 2021, she
+planned a cohoperation with a video
+
+magazine of art, culture and social in-
+formation City of Red Night. </p>
+        <p> Her work ‘‘Annalisa’’, conceived for the
+second edition of Annalisa Durante
+Prize, was offered to Jorit, a well known
+
+artist in the Neapolitan cultural background.
+
+On 4 th April she was interviewed for
+
+the web magazine ‘‘Orizzonti Culturali”, by Giuseppina Capone and Afrodite
+
+Carmen Cionchin. It Is a collective interview on the contemporary condition of a woman and artist in Italy.
+Always in 2021, the young artist took
+part for the first time to an exibition in
+Rome - 70 insieme, dedicated to the
+renowned singer-songwriter Claudio
+Baglioni.
+In July the book “Il Cantico dei Cantici”
+by the writer Slobodanka Ciric was
+published and Mila Maraniello largely
+contributed. In fact here we have her
+Tavole Interlocutorie, commented by
+the art critic Deborah Di Bernardo.
+In addition, the artist, from 21 July to
+6 September, is finaly in presence at
+PAN with Napoli Expo Art Polis 2021,
+organized by Daniela Wollman and
+Gianpasquale Greco.
+
+Again she is at PAN from 18 September to 2 October with the seventh edition of the Art Prize “Napoli Arte & Rivoluzione”.
+
+She also takes part to a Charity Event
+during the 16 October of “La Casa del
+Sorriso”-“Riaffacciamoci alla vita”.
+Fot this event she creates a work for
+Patrizio Oliva, a famous atlet, sponsor
+of the event.
+On 11 December, she takes part to
+an Academy of Fine Arts’s event in
+Naples. It is a charity event: “Pino
+Daniele Alive’’. All the artistic works
+produced for the occurrence were
+sold at auction in December and the
+money earned given for cardiopathic
+patients.
+On 6 of March 2022 she took again part
+to another exibition of Museum Cripta
+Cristo Rivelato located in Brusciano,
+dedicating her work against all wars.</p>
+        </font>
+        </div>
+      <br>
+    </div>
+  </div>
+   <div id="contactme">
+   <section class="paraimg2" data-type="background" data-speed="10" style="background-image: url(https://res.cloudinary.com/dziflll96/image/upload/v1653153235/Sito%20esame/Opera_senza_titolo_80_onq173.jpg);"></section>
+    <div class="container">
+      <center>
+        <h4><font size="7">Contact Me</font></center></h4>
+      <br>
+      <center> 
+	  <img class="mil-contact" src="https://res.cloudinary.com/dziflll96/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1653155410/Sito%20esame/68409EC2-DD68-4786-BFE6-33A7E5B38453_jmxna4.jpg"></img>
+      </center>
+      <br>
+      <center><p>Remember, art is always creepy!</p></center>
+      <br>
+ <center>
+        <p>Phone: +39 - 3511528709</p>
+        <p>Email: milamarafiore@gmail.com </p>
+      </center>
+      <br>
+      <ul class="social-media-icons-list">
+<a href="https://www.instagram.com/bigbr41/?hl" target="_blank" class="social-media-icon instagram"><img src="https://res.cloudinary.com/dziflll96/image/upload/v1654191615/Sito%20esame/734395_instagram_media_online_photo_social_icon_ppabvq.png" height="65px" width="65px"></a>
+        </ul>
+    <hr>
+   </div>
+   <script>
+     $('.enlarge').magnificPopup({
+		type: 'image',
+		closeOnContentClick: true,
+		closeBtnInside: false,
+		mainClass: 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
+		image: {
+			verticalFit: true
+		},
+		zoom: {
+			enabled: true,
+			duration: 300 // don't foget to change the duration also in CSS
+		}
+	});
+
+$('.mil-menu-mobile').on('click',function(){
+  $('.mil-menu-dropdown').toggle();
+});
+
+$( window ).resize(function() {
+  if ($(window).width() >= 500) {
+    $('.mil-menu-dropdown').hide();
+    $('#hamburger-1').removeClass("is-active");
+  } 
+});
+
+$(document).ready(function(){
+  $(".hamburger").click(function(){
+    $(this).toggleClass("is-active");
+  });
+});
+
+//SMOOTH SCROLL ON NAVBAR CLICKS
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1300);
+        return false;
+      }
+    }
+  });
+});
+
+
+
+$(document).ready(function() {
+
+  var $window = $(window);
+
+  $('section[data-type="background"]').each(function() {
+    var $bgobj = $(this); // assigning the object
+    $(window).scroll(function() {
+      var yPos = -($window.scrollTop() / $bgobj.data('speed'));
+      // Put together the final background position (bgp)
+      var bgp = '50% ' + yPos + 'px';
+      // Move the background
+      $bgobj.css("background-position", bgp);
+    });
+  });
+});
+
+
+   </script>
+			</body>
+			</html>
